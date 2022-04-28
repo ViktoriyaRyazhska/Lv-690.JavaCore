@@ -1,0 +1,50 @@
+package Homework1;
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+
+public class HW {
+
+	public static void main(String[] args) {
+		int task = Integer.parseInt(Read("Task № (1,2,3): "));
+		if (task == 1) {
+			double r = Integer.parseInt(Read("r="));
+			System.out.print("Perimeter="+2*Math.PI*r+", area="+Math.PI*Math.PI*r);
+
+		}
+		if (task == 2) {
+			String name = Read("What is your name ?");
+			String adress = Read("Where do you live, "+name+" ?");
+			System.out.println(name+" lives in "+adress);
+
+		}
+		if (task == 3) {
+			int t1 = Integer.parseInt(Read("Call from France, minutes ="));
+			int c1 = Integer.parseInt(Read("units per minute ="));
+			int t2 = Integer.parseInt(Read("Call from Italy, minutes ="));
+			int c2 = Integer.parseInt(Read("units per minute ="));
+			int t3 = Integer.parseInt(Read("Call from Germany, minutes ="));
+			int c3 = Integer.parseInt(Read("units per minute ="));
+			int s1 = t1*c1; 
+			int s2 = t2*c2; 
+			int s3 = t3*c3; 
+			System.out.println("Call from France, total units ="+s1);
+			System.out.println("Call from Italy, total units ="+s2);
+			System.out.println("Call from Germany, total units ="+s3);
+			System.out.println("Total units ="+(s1+s2+s3));
+
+		}
+	}
+	
+	public static String Read(String q) {
+		BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
+		System.out.println(q);
+		try {
+			return reader.readLine();
+		} catch (IOException e) {
+			e.printStackTrace();
+			return "";
+		}
+}
+
+}
