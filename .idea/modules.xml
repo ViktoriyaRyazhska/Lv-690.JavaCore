@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/Array/Array.iml" filepath="$PROJECT_DIR$/Array/Array.iml" />
+      <module fileurl="file://$PROJECT_DIR$/File+/File+.iml" filepath="$PROJECT_DIR$/File+/File+.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Matrix/Matrix.iml" filepath="$PROJECT_DIR$/Matrix/Matrix.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Proc/Proc.iml" filepath="$PROJECT_DIR$/Proc/Proc.iml" />
+      <module fileurl="file://$PROJECT_DIR$/String/String.iml" filepath="$PROJECT_DIR$/String/String.iml" />
+      <module fileurl="file://$PROJECT_DIR$/file/file.iml" filepath="$PROJECT_DIR$/file/file.iml" />
+      <module fileurl="file://$PROJECT_DIR$/if/if.iml" filepath="$PROJECT_DIR$/if/if.iml" />
+      <module fileurl="file://$PROJECT_DIR$/project1.iml" filepath="$PROJECT_DIR$/project1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/series/series.iml" filepath="$PROJECT_DIR$/series/series.iml" />
+    </modules>
+  </component>
+</project>
