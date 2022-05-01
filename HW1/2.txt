@@ -1,0 +1,25 @@
+package JavaCore;
+
+import java.util.Scanner;
+
+public class SecondTest {
+    public static void main(String[] args) {
+
+        System.out.println("How are you?");
+
+        Scanner scanner = new Scanner(System.in);
+        String answer = scanner.nextLine();
+        System.out.println("You are "+ answer);
+
+
+
+        System.out.println("What is your name?");
+        String name = scanner.nextLine();
+        System.out.println("Where You live, "+ name+ "?");
+        String adr = scanner.nextLine();
+        System.out.println("You are: "+name+", from "+adr);
+
+
+    }
+
+}
