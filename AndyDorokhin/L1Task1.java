@@ -15,10 +15,10 @@ public class L1Task1 {
 		System.out.println("Please enter second int - b: ");
 		b = Integer.parseInt(br.readLine());
 		
-		System.out.println("Calulating a + b, result is: " + (a+b));
-		System.out.println("Calulating a - b, result is: " + (a-b));
-		System.out.println("Calulating a * b, result is: " + (a*b));
-		System.out.println("Calulating a / b, result is: " + (1.0*a/b));
+		System.out.println("Calculating a + b, result is: " + (a+b));
+		System.out.println("Calculating a - b, result is: " + (a-b));
+		System.out.println("Calculating a * b, result is: " + (a*b));
+		System.out.println("Calculating a / b, result is: " + (double)a/b);
 		
 		System.out.println("*****************");
 		System.out.println("How are you?");

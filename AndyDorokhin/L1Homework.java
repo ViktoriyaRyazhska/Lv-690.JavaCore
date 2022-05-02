@@ -11,8 +11,12 @@ public class L1Homework {
 		
 		String name, address;
 		
-		int c1, c2, c3;
-		int t1, t2, t3;
+		int c1;
+		int c2;
+		int c3;
+		int t1;
+		int t2;
+		int t3;
 		
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 		
