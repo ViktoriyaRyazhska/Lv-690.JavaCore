@@ -9,9 +9,8 @@ public class task1 {
         Scanner console = new Scanner(System.in);
         System.out.println("Enter radius of the flower bed:");
         double r= console.nextDouble();
-        final double Pi = Math.PI;
-        double L=2*r*Pi;
-        double S=Pi*r*r;
+        double L=2*r*Math.PI;
+        double S=Math.PI*r*r;
         System.out.println("The perimeter of the flower bed is L = " + L + ".");
         System.out.println("The area of the flower bed is S = " + S + ".");
     }
