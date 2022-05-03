@@ -1,0 +1,31 @@
+package JavaCore;
+
+public class StartForPerson {
+    public static void main(String[] args) {
+
+        Person p1 = new Person();
+        p1.setBirthYear(1950);
+        p1.changeName("Al","Pacino");
+
+        Person p2 = new Person("Jack","Nicholson");
+        p2.setBirthYear(1955);
+
+        Person p3 = new Person("Uma","Thurman");
+        p3.setBirthYear(1980);
+
+        Person p4 = new Person("Quan","Tarantino");
+        p4.setBirthYear(1975);
+
+        Person p5 = new Person();
+        p5.setBirthYear(1977);
+        p5.changeName("Lisa","Rodriguez");
+        p5.changeName("Robert","Rodriguez");
+
+
+        System.out.println(p1);
+        System.out.println(p2);
+        System.out.println(p3);
+        System.out.println(p4);
+        System.out.println(p5);
+    }
+}

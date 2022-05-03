@@ -1,0 +1,46 @@
+package JavaCore;
+
+import java.util.Date;
+
+public class Person {
+
+    public String fn;
+    public String ln;
+    public int birthYear;
+
+
+    public Person(String fn, String ln) {
+        this.fn = fn;
+        this.ln = ln;
+    }
+    public Person() {
+    }
+
+    public int getAge() {
+
+        Date date = new Date(System.currentTimeMillis());
+        int year = 1900+date.getYear();
+
+        return year - birthYear;
+    }
+
+    public void setBirthYear(int birthYear) {
+        this.birthYear = birthYear;
+    }
+
+    public void changeName(String fn,String ln){
+        this.fn = fn;
+        this.ln = ln;
+    }
+
+
+    @Override
+    public String toString() {
+        return "Person{" +
+                "fn='" + fn + '\'' +
+                ", ln='" + ln + '\'' +
+                ", birthYear=" + birthYear +
+                ", Age=" + getAge() +
+                '}';
+    }
+}
