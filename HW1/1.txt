@@ -59,7 +59,6 @@ public class FirstTest {
         OnlyPrint("Area of the circle = "+area);
     }
     public void PayForCalls() throws IOException {
-        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 
         //1
         String price1 = PrintWithInput("Input price country1 per minute:_");
