@@ -8,10 +8,6 @@ import java.util.Scanner;
 public class FirstTest {
     public static void main(String[] args) throws IOException {
 
-    //    Scanner scanner = new Scanner(System.in);
-    //    double a = scanner.nextInt();
-        //   double b = scanner.nextInt();
-
         FirstTest ar = new FirstTest();
         ar.ArithmeticTest();
 
@@ -23,13 +19,19 @@ public class FirstTest {
 
     }
 
-    public void ArithmeticTest() throws IOException {
+    public void OnlyPrint(String txt){
+        System.out.println(txt);
+    }
+    public String PrintWithInput(String txt)throws IOException{
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 
-        System.out.println("Input variable a:_");
-        String input1 = br.readLine();
-        System.out.println("Input variable b:_");
-        String input2 = br.readLine();
+        System.out.println(txt);
+        return br.readLine();
+    }
+    public void ArithmeticTest() throws IOException {
+
+        String input1 = PrintWithInput("Input variable :_");
+        String input2 = PrintWithInput("Input variable b:_");
 
         double a = Double.parseDouble(input1);
         double b = Double.parseDouble(input2);
@@ -40,62 +42,55 @@ public class FirstTest {
         double x = a/b;
         double y = a*b;
 
-        System.out.println("Your result a+b=" +sum);
-        System.out.println("Your result a-b=" +dif);
-        System.out.println("Your result a/b=" +x);
-        System.out.println("Your result a*b=" +y);
+        OnlyPrint("Your result a+b=" +sum);
+        OnlyPrint("Your result a-b=" +dif);
+        OnlyPrint("Your result a/b=" +x);
+        OnlyPrint("Your result a*b=" +y);
     }
+    public void GeometryTest()throws IOException {
 
-    public void GeometryTest() throws IOException {
-        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+        String radius = PrintWithInput("Input radius of the circle:_");
 
-        System.out.println("Input radius of the circle:_");
-        String radius = br.readLine();
         double r = Double.parseDouble(radius);
         double perimeter = 2*r*Math.PI;
         double area = Math.PI*Math.pow(r,2);
-        System.out.println("Perimeter of the circle = "+perimeter);
-        System.out.println("Area of the circle = "+area);
-    }
 
+        OnlyPrint("Perimeter of the circle = "+perimeter);
+        OnlyPrint("Area of the circle = "+area);
+    }
     public void PayForCalls() throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-      //1
-        System.out.println("Input price country1 per minute:_");
-        String price1 = br.readLine();
+
+        //1
+        String price1 = PrintWithInput("Input price country1 per minute:_");
         double c1 = Double.parseDouble(price1);
 
-        System.out.println("and how minutes talk:_");
-        String time1 = br.readLine();
+        String time1 = PrintWithInput("and how minutes talk:_");
         double t1 = Double.parseDouble(time1);
         double pay1 = t1*c1;
-        System.out.println("You have pay - "+pay1);
+        OnlyPrint("You have pay - "+pay1);
 
         //2
-
-        System.out.println("Input price country2 per minute:_");
-        String price2 = br.readLine();
+        String price2 = PrintWithInput("Input price country2 per minute:_");;
         double c2 = Double.parseDouble(price2);
 
-        System.out.println("and how minutes talk:_");
-        String time2 = br.readLine();
-        double t2= Double.parseDouble(time2);
+        String time2 = PrintWithInput("and how minutes talk:_");
+        double t2 = Double.parseDouble(time2);
         double pay2 = t2*c2;
-        System.out.println("You have pay - "+pay2);
+        OnlyPrint("You have pay - "+pay2);
 
         //3
-        System.out.println("Input price country3 per minute:_");
-        String price3 = br.readLine();
+        String price3 = PrintWithInput("Input price country3 per minute:_");;
         double c3 = Double.parseDouble(price3);
 
-        System.out.println("and how minutes talk:_");
-        String time3 = br.readLine();
+        String time3 = PrintWithInput("and how minutes talk:_");
         double t3 = Double.parseDouble(time3);
         double pay3 = t3*c3;
-        System.out.println("You have pay - "+pay3);
+        OnlyPrint("You have pay - "+pay3);
         double pay = pay1+pay2+pay3;
+
         //
-        System.out.println("You have pay for all - "+pay);
+        OnlyPrint("You have pay for all - "+pay);
     }
 
 }
