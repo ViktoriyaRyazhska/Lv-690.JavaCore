@@ -9,6 +9,9 @@ public class Person {
         this.firstName = firstName;
         this.lastName = lastName;
     }
+    
+    public Person() {
+    }
 
     public String getFirstName() {
         return firstName;
@@ -20,8 +23,7 @@ public class Person {
         return birthYear;
     }
 
-    public Person() {
-    }
+
 
     public void getAge(){
         System.out.print("Age is: ");
