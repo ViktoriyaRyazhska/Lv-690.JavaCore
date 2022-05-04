@@ -1,2 +1,0 @@
-module Taks1 {
-}
