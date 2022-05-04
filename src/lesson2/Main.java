@@ -1,5 +1,7 @@
 package lesson2;
 
+import java.util.Scanner;
+
 public class Main {
     public static void main(String[] args) {
         Person pers1=new Person();
@@ -8,11 +10,13 @@ public class Main {
         Person pers4=new Person();
         Person pers5=new Person();
 
-        pers1.input();
-        pers2.input();
-        pers3.input();
-        pers4.input();
-        pers5.input();
+        Scanner console = new Scanner(System.in);
+
+        pers1.input(console);
+        pers2.input(console );
+        pers3.input(console);
+        pers4.input(console );
+        pers5.input(console );
             }
 
 }

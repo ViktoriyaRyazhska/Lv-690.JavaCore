@@ -6,8 +6,7 @@ import java.util.Scanner;
 public class Person {
     private String firstName;
     private String lastName;
-    private int birthYear = 2000;
-
+    private int birthYear;
     public static int count = 0;
 
     public Person () {count++;}
@@ -46,8 +45,7 @@ public class Person {
         int year = Calendar.getInstance().get(Calendar.YEAR);
         return year-birthYear;
     }
-    public void input() {
-         Scanner console = new Scanner(System.in);
+    public void input(Scanner console) {
             System.out.println("firstName:");
             this.firstName= console.nextLine();
             System.out.println("lastName:");
@@ -60,8 +58,7 @@ public class Person {
         System.out.println("firstName "+firstName);
         System.out.println("lastName "+lastName);
         System.out.println("birthYear "+birthYear);
-
-            }
+    }
     public void changeName(String fn, String ln) {
         this.firstName=fn;
         this.lastName=ln;
