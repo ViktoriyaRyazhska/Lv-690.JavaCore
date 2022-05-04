@@ -1,0 +1,2 @@
+module Taks1 {
+}
