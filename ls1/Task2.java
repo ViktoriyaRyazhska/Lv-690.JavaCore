@@ -1,8 +1,9 @@
 package ls1;
-/*
- Output question “How are you?“. Define string variable answer. Read the value answer and output: “You are (answer)". 
 
+/*
+ * Output question “How are you?“. Define string variable answer. Read the value answer and output: “You are (answer)". 
  */
+
 import java.io.*;
 public class Task2 {
 
