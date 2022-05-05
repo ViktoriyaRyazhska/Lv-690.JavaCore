@@ -6,7 +6,7 @@ public class Task1 {
 		Scanner sc = new Scanner(System.in);
 		double radius;
 		System.out.println("Enter radius");
-		radius = sc.nextInt();
+		radius = sc.nextDouble();
 		System.out.println("The Perimeter is " + 3.142*2*radius  );
 
 	}
