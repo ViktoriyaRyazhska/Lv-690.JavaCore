@@ -1,6 +1,7 @@
 package JavaCore;
 
-import java.util.Date;
+import java.time.LocalDate;
+//import java.util.Date;
 
 public class Person {
 
@@ -18,17 +19,17 @@ public class Person {
 
     public int getAge() {
 
-        Date date = new Date(System.currentTimeMillis());
-        int year = 1900+date.getYear();
+       // Date date = new Date(System.currentTimeMillis());
+      //  int year = 1900+date.getYear();
 
-        return year - birthYear;
+        return LocalDate.now().getYear()- birthYear;
     }
 
     public void setBirthYear(int birthYear) {
         this.birthYear = birthYear;
     }
 
-    public void changeName(String fn,String ln){
+    public void setChangeName(String fn,String ln){
         this.fn = fn;
         this.ln = ln;
     }
