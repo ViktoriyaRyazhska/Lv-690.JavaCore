@@ -22,6 +22,8 @@ public class Person {
 	private String firsName;
 	private String lastName;
 	private int birthYear;
+
+	BufferedReader bf = new BufferedReader(new InputStreamReader(System.in));
 	
 	public Person(String firsName, String lastName) {
 		this.firsName = firsName;
@@ -64,8 +66,7 @@ public class Person {
 		return "Person [firstName= " + firsName + "; lastName= " + lastName + "; birthYear= " + birthYear +"]";
 	}
 	
-	public void input() throws IOException {
-		BufferedReader bf = new BufferedReader(new InputStreamReader(System.in));
+	public void input() throws IOException {		
 		System.out.println("This metod to input or change information about person");
 		
 		System.out.print("Enter first name of person: ");
