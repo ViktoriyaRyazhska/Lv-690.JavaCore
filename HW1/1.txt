@@ -8,30 +8,31 @@ import java.util.Scanner;
 public class FirstTest {
     public static void main(String[] args) throws IOException {
 
+        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+
         FirstTest ar = new FirstTest();
-        ar.ArithmeticTest();
+        ar.ArithmeticTest(br);
 
         FirstTest geometry = new FirstTest();
-        geometry.GeometryTest();
+        geometry.GeometryTest(br);
 
         FirstTest pays = new FirstTest();
-        pays.PayForCalls();
+        pays.PayForCalls(br);
 
     }
 
     public void OnlyPrint(String txt){
         System.out.println(txt);
     }
-    public String PrintWithInput(String txt)throws IOException{
-        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+    public String PrintWithInput(String txt,BufferedReader br)throws IOException{
 
         System.out.println(txt);
         return br.readLine();
     }
-    public void ArithmeticTest() throws IOException {
+    public void ArithmeticTest(BufferedReader br) throws IOException {
 
-        String input1 = PrintWithInput("Input variable :_");
-        String input2 = PrintWithInput("Input variable b:_");
+        String input1 = PrintWithInput("Input variable :_",br);
+        String input2 = PrintWithInput("Input variable b:_",br);
 
         double a = Double.parseDouble(input1);
         double b = Double.parseDouble(input2);
@@ -47,9 +48,9 @@ public class FirstTest {
         OnlyPrint("Your result a/b=" +x);
         OnlyPrint("Your result a*b=" +y);
     }
-    public void GeometryTest()throws IOException {
+    public void GeometryTest(BufferedReader br)throws IOException {
 
-        String radius = PrintWithInput("Input radius of the circle:_");
+        String radius = PrintWithInput("Input radius of the circle:_",br);
 
         double r = Double.parseDouble(radius);
         double perimeter = 2*r*Math.PI;
@@ -58,31 +59,31 @@ public class FirstTest {
         OnlyPrint("Perimeter of the circle = "+perimeter);
         OnlyPrint("Area of the circle = "+area);
     }
-    public void PayForCalls() throws IOException {
+    public void PayForCalls(BufferedReader br) throws IOException {
 
         //1
-        String price1 = PrintWithInput("Input price country1 per minute:_");
+        String price1 = PrintWithInput("Input price country1 per minute:_",br);
         double c1 = Double.parseDouble(price1);
 
-        String time1 = PrintWithInput("and how minutes talk:_");
+        String time1 = PrintWithInput("and how minutes talk:_",br);
         double t1 = Double.parseDouble(time1);
         double pay1 = t1*c1;
         OnlyPrint("You have pay - "+pay1);
 
         //2
-        String price2 = PrintWithInput("Input price country2 per minute:_");;
+        String price2 = PrintWithInput("Input price country2 per minute:_",br);;
         double c2 = Double.parseDouble(price2);
 
-        String time2 = PrintWithInput("and how minutes talk:_");
+        String time2 = PrintWithInput("and how minutes talk:_",br);
         double t2 = Double.parseDouble(time2);
         double pay2 = t2*c2;
         OnlyPrint("You have pay - "+pay2);
 
         //3
-        String price3 = PrintWithInput("Input price country3 per minute:_");;
+        String price3 = PrintWithInput("Input price country3 per minute:_",br);;
         double c3 = Double.parseDouble(price3);
 
-        String time3 = PrintWithInput("and how minutes talk:_");
+        String time3 = PrintWithInput("and how minutes talk:_",br);
         double t3 = Double.parseDouble(time3);
         double pay3 = t3*c3;
         OnlyPrint("You have pay - "+pay3);
