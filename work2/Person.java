@@ -1,6 +1,6 @@
 package work2;
 
-import java.util.Scanner;
+import java.time.LocalDate;
 
 public class Person {
 	private String firstName;
@@ -42,16 +42,12 @@ public class Person {
 	
 	
 	int getAge() {
-		return 2022-birthYear;
+		return LocalDate.now().getYear() - birthYear;
 	}
-	void input() {
-		Scanner sc = new Scanner(System.in);
-		System.out.print("enter your first name: ");
-		firstName = sc.nextLine();
-		System.out.print("enter your last name: ");
-		lastName = sc.nextLine();
-		System.out.print("enter your birthyear: ");
-		birthYear = Integer.parseInt(sc.nextLine());
+	void input(String fName, String lName, int bYear) {
+		firstName = fName;
+		lastName = lName;
+		birthYear = bYear;
 		if(birthYear>2022 || birthYear<1900) {
 			System.out.println("You`re a lier! it's not yours birthyear");
 			birthYear = 0;

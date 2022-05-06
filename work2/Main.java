@@ -1,5 +1,7 @@
 package work2;
 
+import java.util.Scanner;
+
 public class Main {
 
 	public static void main(String[] args) {
@@ -22,7 +24,14 @@ public class Main {
 		
 		System.out.println("");
 		
-		p4.input();
+		Scanner sc = new Scanner(System.in);
+		System.out.print("enter your first name: ");
+		String fName = sc.nextLine();
+		System.out.print("enter your last name: ");
+		String lName = sc.nextLine();
+		System.out.print("enter your birthyear: ");
+		int bYear = Integer.parseInt(sc.nextLine());
+		p4.input(fName, lName, bYear);
 		p4.output();
 		
 		System.out.println("");
