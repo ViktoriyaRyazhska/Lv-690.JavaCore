@@ -5,7 +5,15 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 
 enum HTTPError{
-    BadRequest,Unauthorized,PaymentRequired,Forbidden,NotFound
+    BadRequest("Bad request"),Unauthorized("Unauthorized"),PaymentRequired("Payment Required"),Forbidden("Forbidden"),NotFound("Not Found");
+
+    public String getDescription() {
+        return description;
+    }
+    private final String description;
+    HTTPError(String descr){
+        this.description = descr;
+    }
 }
 
 public class NumberTask {
@@ -81,19 +89,19 @@ public class NumberTask {
 
         switch (error){
             case 400:
-                answer = String.valueOf(HTTPError.BadRequest);
+                answer = HTTPError.BadRequest.getDescription();
                 break;
             case 401:
-                answer = String.valueOf(HTTPError.Unauthorized);
+                answer = HTTPError.Unauthorized.getDescription();
                 break;
             case 402:
-                answer = String.valueOf(HTTPError.PaymentRequired);
+                answer = HTTPError.PaymentRequired.getDescription();
                 break;
             case 403:
-                answer = String.valueOf(HTTPError.Forbidden);
+                answer = HTTPError.Forbidden.getDescription();
                 break;
             case 404:
-                answer = String.valueOf(HTTPError.NotFound);
+                answer = HTTPError.NotFound.getDescription();
                 break;
             default:
                 System.out.println("wrong input number!");
