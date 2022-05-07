@@ -19,14 +19,13 @@ public class LessonFour {
         int oddQuantity=0;
 
         LessonFour lf = new LessonFour();
-        if (lf.compareVal(val1)==true) {
-            oddQuantity++;
-        }
-        if (lf.compareVal(val2)==true) {
-            oddQuantity++;
-        }
-        if (lf.compareVal(val3)==true) {
-            oddQuantity++;
+
+        int[] arr = {val1, val2, val3};
+
+        for (int i = 0; i <= 2; i++) {
+            if (lf.compareVal(arr[i])==true) {
+                oddQuantity++;
+            }
         }
 
         System.out.println("Odd from them:" + oddQuantity);
