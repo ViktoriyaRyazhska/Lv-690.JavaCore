@@ -12,14 +12,7 @@ public class AdressBook {
 		System.out.println("Where do You live " + name +"?");
 		String address = br.readLine();
 		System.out.println("Your address " + name +" is "+ address);
-		
-	
-	
-	
-	
-	
-	
-	
+			
 	}
 }
 
