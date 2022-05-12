@@ -23,7 +23,7 @@ public class main {
     }
 
     public static int amountOfDays() {
-        int[] daysOfMonth = {0,31, 28, 31, 31, 30, 31, 31, 30, 31, 31, 30, 31};
+        int[] daysOfMonth = {31, 28, 31, 31, 30, 31, 31, 30, 31, 31, 30, 31};
         Scanner sc = new Scanner(System.in);
         System.out.println("Enter the number of month:::");
         int numberOfMonth = sc.nextInt();
@@ -37,6 +37,7 @@ public class main {
         if (number == false) {
             System.out.println("You enter wrong number of month");
         }
+        sc.close();
         return daysOfMonth.length;
     }
 
