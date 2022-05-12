@@ -1,0 +1,5 @@
+package ls4;
+
+public enum Continent {
+	EURASIA, NORSH_AMERICA, SOUCH_AMERICA, AFRICA, AUSTRALIA, ANTARKTIDA
+}
