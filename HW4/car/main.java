@@ -22,7 +22,7 @@ public class main {
         car[] carsArray = cars;
 
         Scanner sc = new Scanner(System.in);
-        System.out.println("Input year of car.car ");
+        System.out.println("Input year of car ");
         int year = Integer.parseInt(sc.next());
 
         for (int i = 0; i < carsArray.length; i++) {
@@ -37,22 +37,15 @@ public class main {
 
     public static void sortCarByYear(car[] cars) {
         car[] carsArray = cars;
-        int tmpYear;
-        String tmpField;
-        String tmpEngine;
+        car tmpYear;
+
 
         for (int i = 0; i < carsArray.length - 1; i++) {
             for (int j = i + 1; j < carsArray.length; j++) {
                 if (carsArray[i].year < carsArray[j].year) {
-                    tmpYear = carsArray[i].year;
-                    tmpField = carsArray[i].carFields;
-                    tmpEngine = carsArray[i].engine;
-                    carsArray[i].year = carsArray[j].year;
-                    carsArray[i].carFields = carsArray[j].carFields;
-                    carsArray[i].engine = carsArray[j].engine;
-                    carsArray[j].year = tmpYear;
-                    carsArray[j].carFields = tmpField;
-                    carsArray[j].engine = tmpEngine;
+                    tmpYear = carsArray[i];
+                    carsArray[i] = carsArray[j];
+                    carsArray[j] = tmpYear;
                 }
             }
         }

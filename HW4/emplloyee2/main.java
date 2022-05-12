@@ -33,21 +33,14 @@ public class main {
     }
 
     public static void userSort(employee2[] user) {
-        int tmpSalary;
-        String tempName;
-        int tempDepart;
+        employee2 tmpSalary;
+       
         for (int i = 0; i < user.length - 1; i++) {
             for (int j = i + 1; j < user.length; j++) {
                 if (user[i].salary < user[j].salary) {
-                    tmpSalary = user[i].salary;
-                    tempName = user[i].name;
-                    tempDepart = user[i].department;
-                    user[i].salary = user[j].salary;
-                    user[i].name = user[j].name;
-                    user[i].department = user[j].department;
-                    user[j].salary = tmpSalary;
-                    user[j].name = tempName;
-                    user[j].department = tempDepart;
+                    tmpSalary = user[i];
+                    user[i] = user[j];
+                    user[j] = tmpSalary;
                 }
             }
         }
