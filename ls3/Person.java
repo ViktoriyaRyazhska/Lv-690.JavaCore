@@ -21,9 +21,7 @@ import java.time.YearMonth;
 public class Person {
 	private String firsName;
 	private String lastName;
-	private int birthYear;
-
-	BufferedReader bf = new BufferedReader(new InputStreamReader(System.in));
+	private int birthYear;	
 	
 	public Person(String firsName, String lastName) {
 		this.firsName = firsName;
@@ -66,17 +64,17 @@ public class Person {
 		return "Person [firstName= " + firsName + "; lastName= " + lastName + "; birthYear= " + birthYear +"]";
 	}
 	
-	public void input() throws IOException {		
+	public void input(BufferedReader br) throws IOException {		
 		System.out.println("This metod to input or change information about person");
 		
 		System.out.print("Enter first name of person: ");
-		setFirsName(bf.readLine());
+		setFirsName(br.readLine());
 		
 		System.out.print("Enter last name of person: ");
-		setLastName(bf.readLine());
+		setLastName(br.readLine());
 		
 		System.out.print("Enter persons birth year: ");
-		int brYear = Integer.parseInt(bf.readLine());
+		int brYear = Integer.parseInt(br.readLine());
 		setBirthYear(brYear);
 		return;
 	}

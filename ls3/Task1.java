@@ -1,10 +1,13 @@
 package ls3;
 
+import java.io.BufferedReader;
 import java.io.IOException;
+import java.io.InputStreamReader;
 
 public class Task1 {
 
 	public static void main(String[] args) throws IOException {
+		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 	// Practical task	
 		Employee e1 = new Employee("Andrii", 100, 10);
 		System.out.println(e1);
@@ -71,13 +74,13 @@ public class Task1 {
 		p4.setBirthYear(1955);
 		System.out.println("Person information= " + p4.output());
 		System.out.println("Person age= " + p4.getAge());
-		p4.input();
+		p4.input(br);
 		System.out.println("Person information= " + p4.output());
 		System.out.println("Person age= " + p4.getAge());
 		System.out.println();
 		
 		Person p5 = new Person();
-		p5.input();
+		p5.input(br);
 		System.out.println("Person information= " + p5.output());
 		System.out.println("Person age= " + p5.getAge());
 	}
