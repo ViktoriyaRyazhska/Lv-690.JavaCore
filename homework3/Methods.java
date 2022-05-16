@@ -1,37 +1,34 @@
 package homework3;
 
 public class Methods {
-	Enumbreed br1=Enumbreed.Affenpinscher;
-	Enumbreed br2=Enumbreed.Beagle;
-	Enumbreed br3=Enumbreed.Sloughi;
-	Dog pes1=new Dog("Bobik","Streetpes",3);
-	Dog pes2=new Dog("Marsik","Hotdog",20);
-	Dog pes3=new Dog("Rex","Colddog",5);
+	Dog pes1 = new Dog("Bobik",Enumbreed.Affenpinscher,3);
+	Dog pes2 = new Dog("Marsik",Enumbreed.Beagle,20);
+	Dog pes3 = new Dog("Rex",Enumbreed.Sloughi,5);
 	
 	public void getBreeds() {
 	
 	}
 	
 	public void oldDog() {
-		if (pes1.age>pes2.age && pes1.age>pes3.age) {
-			System.out.println(pes1.name+" the oldest dog");
+		if (pes1.getAge()>pes2.getAge() && pes1.getAge()>pes3.getAge()) {
+			System.out.println(pes1.getAge()+" the oldest dog");
 			}else {
-				if (pes2.age>pes1.age && pes2.age>pes3.age) {
-				System.out.println(pes2.name+" the oldest dog");	
+				if (pes2.getAge()>pes1.getAge() && pes2.getAge()>pes3.getAge()) {
+				System.out.println(pes2.getAge()+" the oldest dog");	
 					}else {
-						if (pes3.age>pes1.age && pes3.age>pes2.age) {
-						System.out.println(pes3.name+" the oldest dog");	
+						if (pes3.getAge()>pes1.getAge() && pes3.getAge()>pes2.getAge()) {
+						System.out.println(pes3.getAge()+" the oldest dog");	
 						}
 					}
 			}
 	}
 	public void checkName() {
-		if(pes1.name==pes2.name || pes2.name==pes3.name || pes1.name==pes3.name) {
+		if(pes1.getAge()==pes2.getAge() || pes2.getAge()==pes3.getAge() || pes1.getAge()==pes3.getAge()) {
 			System.out.println("Identical name");	
 			}else {
 				System.out.println("Not the same name");
 		}
-	
+		
 	}
 }
 

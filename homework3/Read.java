@@ -45,7 +45,9 @@ public class Read {
 					System.out.println("Min numbers ="+b2);
 			}
 		//HTTP eror
-	
-		System.out.println(Error.values());
+		for(Error element2:Error.values()) {
+			System.out.println(element2.getNumber()+" "+element2.toString());
+		}
+		
 	}
 }
