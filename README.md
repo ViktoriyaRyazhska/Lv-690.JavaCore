@@ -13,7 +13,7 @@ N|Name| HW1 | HW2. Classes|HW3. If...|HW4. Loops|HW5. OOP1 |HW6. OOP2 |HW7. Inne
 10|Andrii Sukhodolskiy|||||||||||||
 11||||||||||||||
 12||||||||||||||
-13||||||||||||||
+13|Olena Gura|+||||||||||||
 14|Yuriy Magotskyi|+||||||||||||
 15|Nazar Tsybulskyi|+||||||||||||
 16||||||||||||||
