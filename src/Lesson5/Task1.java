@@ -20,6 +20,6 @@ public class Task1 {
     public int numberOfDays(int month) {
         int[] monthDays = {31, 28, 31, 30, 31, 30,
                 31, 31, 30, 31, 30, 31};
-        return monthDays[month - 1];
+        return monthDays[month];
     }
 }
