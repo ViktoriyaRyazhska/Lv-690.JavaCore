@@ -41,7 +41,7 @@ public class Person {
     }
 
     public void getAge() {
-        System.out.println("Age is: ");
+        System.out.print("Age is: ");
         System.out.println(2022 - this.birthYear);
     }
 
@@ -51,11 +51,17 @@ public class Person {
         this.birthYear = birthYear;
     }
 
+    @Override
+    public String toString() {
+        return firstName +" "+ lastName +" " + birthYear;
+    }
+
     public void output() {
-        System.out.println(this.firstName + " ");
-        System.out.println(this.lastName);
-        System.out.println(this.birthYear);
-        getAge();
+        System.out.println(toString());
+//        System.out.println(this.firstName + " ");
+//        System.out.println(this.lastName);
+//        System.out.println(this.birthYear);
+       getAge();
     }
 
     public void changeName(String firstName, String lastName) {
