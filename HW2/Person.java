@@ -6,7 +6,7 @@ import java.util.Scanner;
 public class Person {
     private String firstName;
     private String lastName;
-    private int birthYear;
+    int birthYear;
 
     public Person(String firstName, String lastName) {
         this.firstName = firstName;
@@ -40,29 +40,27 @@ public class Person {
         this.birthYear = birthYear;
     }
 
-    public int getAge() {
-        int year = Calendar.getInstance().get(Calendar.YEAR);
-        return year - birthYear;
+    public void getAge() {
+        System.out.println("Age is: ");
+        System.out.println(2022 - this.birthYear);
     }
 
-    public void input(Scanner console) {
-        System.out.println("Enter firstName:");
-        this.firstName = console.nextLine();
-        System.out.println("Enter lastName:");
-        this.lastName = console.nextLine();
-        System.out.println("Enter birthYear:");
-        this.birthYear = console.nextInt();
+    public void input(String firstName, String lastName, int birthYear) {
+        this.firstName = firstName;
+        this.lastName = lastName;
+        this.birthYear = birthYear;
     }
 
     public void output() {
-        System.out.println("firstName " + firstName);
-        System.out.println("lastName " + lastName);
-        System.out.println("birthYear " + birthYear);
-
+        System.out.println(this.firstName + " ");
+        System.out.println(this.lastName);
+        System.out.println(this.birthYear);
+        getAge();
     }
 
-    public void changeName(String fn, String ln) {
-        this.firstName = fn;
-        this.lastName = ln;
+    public void changeName(String firstName, String lastName) {
+        this.firstName = firstName;
+        this.lastName = lastName;
     }
 }
+
