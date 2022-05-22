@@ -1,4 +1,5 @@
 package HW4;
+//read 3 float numbers and check: are they all belong to the range [-5,5];
 
 import java.util.Scanner;
 

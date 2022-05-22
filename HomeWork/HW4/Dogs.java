@@ -36,7 +36,9 @@ public class Dogs {
 	        this.age = age;
 	    }
 	
-
+	    enum Breed {
+	        ВІВЧАРКА, АЛАБАЙ, МАЛАМУТ, БУЛЬДОГ
+	    }
 
     @Override
     public String toString() {

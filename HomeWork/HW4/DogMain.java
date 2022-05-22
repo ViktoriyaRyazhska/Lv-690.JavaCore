@@ -1,3 +1,9 @@
+//Сreate class Dog with fields name, breed, age. 
+//Declare enum for field breed. 
+//Create 3 instances of type Dog. 
+//Check if there is no two dogs with the same name. 
+//Display the name and the kind of the oldest dog. 
+
 package HW4;
 
 public class DogMain {
@@ -7,7 +13,7 @@ public class DogMain {
 
     	Dogs dog1 = new Dogs("Zhasmin" , "Chichua-Chua" , 4);
        Dogs dog2 = new Dogs("Stas" , "BullDogs", 3);
-       Dogs dog3 = new Dogs("Bobik" , "KaneKorso", 6);
+       Dogs dog3 = new Dogs("Bobik" , "Unwkown", 6);
 
        if (dog1.getName() == dog2.getName()){
            System.out.println("name of dog1 = name of dog2");}
@@ -35,41 +41,3 @@ public class DogMain {
        }
     }
 
-
-
-
-//
-//Dog dog1 = new Dog();
-//dog1.setBreed(Breed.LAB);
-//dog1.setName("Mike");
-//dog1.setAge(6);
-//
-//Dog dog2 = new Dog();
-//dog2.setBreed(Breed.DOBERMAN);
-//dog2.setName("Rex");
-//dog2.setAge(5);
-//
-//Dog dog3 = new Dog();
-//dog3.setBreed(Breed.SHEPPARD);
-//dog3.setName("Wolfy");
-//dog3.setAge(11);
-//if (dog1.getAge() > dog2.getAge() && dog1.getAge() > dog3.getAge()) {
-//    System.out.println("Breed of eldest dog is " + Breed.LAB);
-//} else if (dog2.getAge() > dog3.getAge()) {
-//    System.out.println("Breed of eldest dog is " + Breed.DOBERMAN);
-//
-//} else {
-//    System.out.println("Breed of eldest dog is " + Breed.SHEPPARD);
-//}
-//
-//if (dog1.getName() == dog2.getName() ||
-//        dog2.getName() == dog3.getName() ||
-//        dog3.getName() == dog1.getName()) {
-//    System.out.println(" some of dogs have same name");
-//} else {
-//    System.out.println("all dogs have different name");
-//}
-//
-//
-//}
-//}
