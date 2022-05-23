@@ -1,7 +1,7 @@
 # Lv-690.JavaCore
 N|Name| HW1 | HW2. Classes|HW3. If...|HW4. Loops|HW5. OOP1 |HW6. OOP2 |HW7. Inner classes| HW8. Collection | HW9. String|HW10. Exception|HW11. Thread. IO|HW12. Java8
 --|--|--|--|--|--|--|--|--|--|--|--|--|--
-1|Artem Lysiak|+|+|+|+|||||||||
+1|Artem Lysiak|+|+|+|+|+|+|||||||
 2|Dmytro Yarych|+|+|+|+|||||||||
 3|Vitalii Tsono|+|+|+|+|+||||||||
 4|Ryscal Tanya|+|+|+||||||||||
