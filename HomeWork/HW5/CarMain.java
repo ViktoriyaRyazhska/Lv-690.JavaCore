@@ -39,24 +39,34 @@ if (guess == false) {
 
 public static void sortByYear(Car[] auto) {
 Car[] arrays = auto;
-String carsName;
-int carsYear;
-double carsEngine;
+//String carsName;
+//int carsYear;
+//double carsEngine;
+Car car;
 System.out.println("Sort by Year desc:");
 for (int i = 0; i < arrays.length - 1; i++) {
   for (int j = i + 1; j < arrays.length; j++) {
       if (arrays[i].getYearOfProduction() < arrays[j].getYearOfProduction()) {
-    	  carsName = arrays[i].name;
-    	  carsYear = arrays[i].yearOfProduction;
-    	  carsEngine = arrays[i].engine;
-          arrays[i].yearOfProduction = arrays[j].yearOfProduction;
-          arrays[i].engine = arrays[j].engine;
-          arrays[i].name = arrays[j].name;
-          arrays[j].yearOfProduction = carsYear;
-          arrays[j].engine = carsEngine;
-          arrays[j].name = carsName;
-      }
-  }
+//    	  carsName = arrays[i].name;
+//    	  carsYear = arrays[i].yearOfProduction;
+//    	  carsEngine = arrays[i].engine;
+//          arrays[i].yearOfProduction = arrays[j].yearOfProduction;
+//          arrays[i].engine = arrays[j].engine;
+//          arrays[i].name = arrays[j].name;
+//          arrays[j].yearOfProduction = carsYear;
+//          arrays[j].engine = carsEngine;
+//          arrays[j].name = carsName;
+//      }
+//  }
+//  нам так не треба, ми можемо цілий об'єкт переписувати
+  
+  car = arrays[i];
+  arrays[i] = arrays[j];
+  arrays[j]=car;
+  }};
+  
+  
+  
 }
 for (int i = 0; i < arrays.length; i++) {
   System.out.println(arrays[i]);
