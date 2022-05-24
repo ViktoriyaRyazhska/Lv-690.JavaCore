@@ -36,7 +36,7 @@ public class ContractEmployee extends Employee implements Payment{
     public void setFederalTaxIdmember(String federalTaxIdmember) {
         this.federalTaxIdmember = federalTaxIdmember;
     }
-    public int calculatePlay(){
+    public int calculatePay(){
         return salary;
     }
 
@@ -44,7 +44,7 @@ public class ContractEmployee extends Employee implements Payment{
     public String toString() {
         return "ContractEmployee{" +
                 "name='" + name + '\'' +
-                ", salary=" + calculatePlay() +
+                ", salary=" + calculatePay() +
                 ", federalTaxIdmember='" + federalTaxIdmember + '\'' +
                 '}';
     }

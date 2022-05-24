@@ -15,7 +15,7 @@ public class Employee implements Payment {
     public void setEmployeeId(String employeeId) {
         this.employeeId = employeeId;
     }
-
+   
     @Override
     public int calculatePay() {
         return 0;

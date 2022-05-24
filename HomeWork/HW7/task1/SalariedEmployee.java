@@ -59,4 +59,5 @@ public class SalariedEmployee extends Employee implements Payment {
                 ", hour=" + hour +" Salary:  "+calculatePay()+
                 '}';
     }
+    
 }
