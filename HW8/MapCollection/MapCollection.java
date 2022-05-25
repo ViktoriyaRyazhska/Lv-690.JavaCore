@@ -32,7 +32,7 @@ public class MapCollection {
         if (employeeMap.containsValue(name)) {
             System.out.println("User found");
             for (Map.Entry<Integer, String> en : employeeMap.entrySet()) {
-                if (employeeMap.containsValue(name)) {
+                if (en.getValue().equals(name)) {
                     System.out.println(name + "  " + en.getKey());
                     break;
                 }
