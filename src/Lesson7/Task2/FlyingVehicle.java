@@ -1,6 +1,6 @@
 package Lesson7.Task2;
 
-public class FlyingVehicle extends Passengers {
+public class FlyingVehicle extends Passengers implements Vehicle {
     public void fly() {
         System.out.println("Flying vehicle is fly");
     }

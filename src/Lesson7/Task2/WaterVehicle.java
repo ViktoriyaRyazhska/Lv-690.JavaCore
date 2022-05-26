@@ -24,7 +24,7 @@ class Liner extends WaterVehicle {
     }
 }
 
- class Boat extends WaterVehicle {
+ class Boat extends WaterVehicle implements Vehicle {
     private int volume;
 
     public int getVolume() {

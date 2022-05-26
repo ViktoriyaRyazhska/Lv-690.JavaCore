@@ -1,6 +1,6 @@
 package Lesson7.Task2;
 
-public class GroundVehicle extends Passengers {
+public class GroundVehicle extends Passengers implements Vehicle  {
 
     public void drive() {
         System.out.println("Ground vehicle must be driven");
