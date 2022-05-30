@@ -101,10 +101,7 @@ public class Homework {
 					count++;
 				}				
 			}
-		}
-		if (count >= 2) {
-			return true;
-		}
-		return false;
+		}		
+		return count >= 2;
 	}
 }
