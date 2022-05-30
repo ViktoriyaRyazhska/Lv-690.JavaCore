@@ -2,7 +2,7 @@ package Lesson7;
 
 import java.util.Comparator;
 
-public class Employee {
+public class Employee implements Payment{
     private  int employeeId;
     private String name;
     double salary;

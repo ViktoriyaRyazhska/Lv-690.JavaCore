@@ -1,5 +1,7 @@
 package Lesson7;
 
 public interface Payment {
-    void   calculatePay();
+    default void calculatePay() {
+
+    }
 }
