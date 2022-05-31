@@ -1,13 +1,13 @@
 package Lesson7.Task2;
 
 public class Passengers {
-    private int passengersint;
+    private int passengers;
 
-    public int getPassengersint() {
-        return passengersint;
+    public int getPassengers() {
+        return passengers;
     }
 
-    public void setPassengersint(int passengersint) {
-        this.passengersint = passengersint;
+    public void setPassengers(int passengers) {
+        this.passengers = passengers;
     }
 }

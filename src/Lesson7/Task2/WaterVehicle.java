@@ -1,6 +1,6 @@
 package Lesson7.Task2;
 
-public class WaterVehicle extends Passengers {
+public class WaterVehicle extends Passengers implements Vehicle {
 
     public void isSailing() {
         System.out.println("Water vehicle is sailing");
@@ -24,7 +24,7 @@ class Liner extends WaterVehicle {
     }
 }
 
- class Boat extends WaterVehicle implements Vehicle {
+ class Boat extends WaterVehicle {
     private int volume;
 
     public int getVolume() {
