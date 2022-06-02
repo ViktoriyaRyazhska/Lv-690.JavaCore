@@ -26,10 +26,11 @@ public class readNumber_last_version {
 
     public static int readNumber(int start, int end) throws RangeException {
         Scanner sc = new Scanner(System.in);
-        System.out.println("Start and End of range ---" + start + " " + end);
+        System.out.println("Start and End of range:    " + start + "------" + end+".   Enter the number:");
         int number = Integer.parseInt(sc.nextLine());
+        System.out.println("You enter  "+number);
         if (number <= start || number >= end) {
-            throw new RangeException("The number is not in our range");
+            throw new RangeException("The number is not in our range"+"   Try again.");
         }
         return number;
 
