@@ -55,7 +55,7 @@ public class Plant {
         return "Plant{" + "size=" + size + ", color=" + color + ", type=" + type + '}';
     }
 
-    public static void main(String[] args) throws ColorException, TypeException {
+    public static void main(String[] args)  {
         Plant[] p = new Plant[5];
         // Метод для провірки окремих Plant. Як можна оминути багато повторів Try/Catch?
         try {
@@ -64,6 +64,7 @@ public class Plant {
         } catch (ColorException | TypeException e) {
             System.out.println(e.getMessage());
             e.printStackTrace();
+
         }
 //        try {
 //            p[1] = new Plant(2, "BLUE", "STREPTOPHYTA");
@@ -98,7 +99,7 @@ public class Plant {
         creatingP(l, 2, "BLUE", "STREPTOPHYTA");
         creatingP(l, 3, "WHITE", "CHLOROPHYTA");
         creatingP(l, 4, "RED", "STREPTOPHYTA");
-        creatingP(l, 5, "BLACK", "STREPTOPHYTA");
+        creatingP(l, 5, "BLACK", "Not right");
         for (Plant f : l) {
             System.out.println(f);
 
@@ -132,15 +133,15 @@ public class Plant {
     }
 
 
-    public static void creatingP(List<Plant> l, int size, String color, String type) throws ColorException, TypeException {
+    public static void creatingP(List<Plant> l, int size, String color, String type)  {
 
 
         try {
             l.add(new Plant(size, color, type));
 
         } catch (ColorException | TypeException e) {
-            System.out.println(e.getMessage());
-            e.printStackTrace();
+            System.out.println("Об'єкт не створений  "+"з параметрами:  "+" розмір  "+size+" колір  "+
+                    color+"  тип  "+type+"     "+e.getMessage());
         }
 
 
