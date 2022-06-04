@@ -85,8 +85,7 @@ public class Person {
     }
 
     public int getAge() {
-        int currentYear = LocalDateTime.now().getYear();
-        return currentYear - birthYear;
+        return LocalDateTime.now().getYear() - birthYear;
     }
 
 
