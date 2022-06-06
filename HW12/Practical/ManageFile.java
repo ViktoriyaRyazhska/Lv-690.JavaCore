@@ -40,6 +40,7 @@ public interface ManageFile {
 
 			for (int i = 0; i < list.size(); i++) {
 				bw.write(list.get(i));
+				bw.write(13);
 			}
 			bw.close();
 		} catch (IOException e) {

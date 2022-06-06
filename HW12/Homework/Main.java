@@ -1,5 +1,6 @@
 package Homework;
 
+import java.util.ArrayList;
 import java.util.List;
 
 import Practical.ManageFile;
@@ -66,22 +67,30 @@ public class Main {
 
 		// 4.
 		System.out.println("");
-		List<String> list = ManageFile.readFile("d:/java/file2.txt");
+		List<String> list = ManageFile.readFile("d:/java/git.txt");
+		List<String> outlist = new ArrayList<String>();
 		if (list.size() > 0) {
-			System.out.println("lines=" + list.size());
-			System.out.println("Longest line is: " + ManageFile.getLongestLine(list));
+			//System.out.println("lines=" + list.size());
+			//System.out.println("Longest line is: " + ManageFile.getLongestLine(list));
+			outlist.add("lines=" + list.size());
+			outlist.add("Longest line is: " + ManageFile.getLongestLine(list));
 			String name = ManageFile.getFistLinesContains(list, "Name:");
 			if (name != "") {
-				System.out.println(name);
+				//System.out.println(name);
+				outlist.add(name);
 			} else {
-				System.out.println("Name not found in file");
+				//System.out.println("Name not found in file");
+				outlist.add("Name not found in file");
 			}
 			String bd = ManageFile.getFistLinesContains(list, "Birthday:");
 			if (bd != "") {
-				System.out.println(name);
+				//System.out.println(bd);
+				outlist.add(bd);
 			} else {
-				System.out.println("Birthday not found in file");
+				//System.out.println("Birthday not found in file");
+				outlist.add("Birthday not found in file");
 			}
+			ManageFile.writeFile("d:/java/file3.txt", outlist);	
 		}
 	}
 
