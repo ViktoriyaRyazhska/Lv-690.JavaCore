@@ -1,1 +1,3 @@
-Number of lines :26 Longest word : commercials. Birth : Sergey.November10,1983.
+Number of lines :4
+Longest word :  I write music and create commercials.
+Birth :  I was born on November 10, 1983.
