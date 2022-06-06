@@ -8,15 +8,15 @@ import java.util.regex.Pattern;
 
 public class main {
     public static void main(String[] args) throws IOException {
-        String txt = "Born to poor cotton farmers in Kingsland, Arkansas, Cash rose to fame during the mid-1950s " +
-                "in the burgeoning rockabilly scene in Memphis, Tennessee, after four years in the Air Force. " +
-                "He traditionally began his concerts by simply introducing himself, \"Hello, I'm Johnny Cash\",[c] " +
-                "followed by \"Folsom Prison Blues\", one of his signature songs. Alongside \"Folsom Prison Blues\", " +
-                "his other signature songs include \"I Walk the Line\", \"Ring of Fire\", \"Get Rhythm\", and \"Man in var\"" +
-                ". He also recorded humorous numbers like \"One Piece at a Time\" and \"A Boy Named var\", a duet with his " +
-                "future wife June called \"Jackson\" (followed by many further duets after their wedding), and railroad songs " +
-                "such as \"Hey, Porter\", \"Orange Blossom Special\", and \"Rock Island Line\".[12] During the last stage of " +
-                "his career, he covered songs by contemporary rock artists; among his most notable covers were \"Hurt\" by " +
+        String txt = "Born to poor cotton farmers in Kingsland, Arkansas, Cash rose to fame during the mid-1950s " +"\n"+
+                "in the burgeoning rockabilly scene in Memphis, Tennessee, after four years in the Air Force.\n " +
+                "He traditionally began his concerts by simply introducing himself, \"Hello, I'm Johnny Cash\",[c]\n " +
+                "followed by \"Folsom Prison Blues\", one of his signature songs. Alongside \"Folsom Prison Blues\", \n" +
+                "his other signature songs include \"I Walk the Line\", \"Ring of Fire\", \"Get Rhythm\", and \"Man in var\"\n" +
+                ". He also recorded humorous numbers like \"One Piece at a Time\" and \"A Boy Named var\", a duet with his \n" +
+                "future wife June called \"Jackson\" (followed by many further duets after their wedding), and railroad songs \n" +
+                "such as \"Hey, Porter\", \"Orange Blossom Special\", and \"Rock Island Line\".[12] During the last stage of \n" +
+                "his career, he covered songs by contemporary rock artists; among his most notable covers were \"Hurt\" by \n" +
                 "Nine Inch Nails, \"Rusty Cage\" by Soundgarden, and \"Personal Jesus\" by Depeche Mode.variant";
 
         try {
@@ -32,28 +32,41 @@ public class main {
         try {
             FileReader in = new FileReader("Date.txt");
             BufferedReader br = new BufferedReader(in);
+            StringBuilder st = new StringBuilder();
             String txtIn = br.readLine();
 
-            String[] txtArr = txtIn.split(" ");
+            while (txtIn != null) {
+                st.append(txtIn);
+                st.append(System.lineSeparator());
+                txtIn = br.readLine();
+            }
+            String everything = st.toString();
+
+           // System.out.println(everything);
+            br.close();
+
+
+            String[] txtArr = everything.split("\n");
             //Symbols counter
             for (int i = 0; i < txtArr.length; i++) {
-                System.out.println("Index " + i + " has length " + txtArr[i].length());
+                System.out.println("Lines " + i + " has length " + txtArr[i].length());
+
             }
             //Longest and short
-            String txtArrLongest = Arrays.stream(txtIn.split(" ")).
+            String txtArrLongest = Arrays.stream(everything.split("\n")).
                     max(Comparator.comparingInt(String::length)).
                     orElse(null);
-            String txtArrShort = Arrays.stream(txtIn.split(" ")).
+            String txtArrShort = Arrays.stream(everything.split("\n")).
                     min(Comparator.comparingInt(String::length)).
                     orElse(null);
-            System.out.println("Longest word " + txtArrLongest);
-            System.out.println("Shortest word " + txtArrShort);
+            System.out.println("Longest lines :" + txtArrLongest);
+            System.out.println("Shortest lines :" + txtArrShort);
             //regex search
             Pattern p = Pattern.compile("var");
-            Matcher m = p.matcher(txtIn);
+            Matcher m = p.matcher(everything);
             System.out.println("Finding specific word ");
             while (m.find()) {
-                System.out.println(txtIn.substring(m.start(), m.end()));
+                System.out.println(everything.substring(m.start(), m.end()));
             }
 
 
