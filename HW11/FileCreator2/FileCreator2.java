@@ -1,8 +1,6 @@
 package HomeWork.FileCreator2;
-import java.io.FileInputStream;
-import java.io.FileOutputStream;
-import java.io.IOException;
-import java.io.InputStream;
+
+import java.io.*;
 import java.nio.charset.StandardCharsets;
 import java.util.Arrays;
 import java.util.Comparator;
@@ -14,18 +12,22 @@ public class FileCreator2 {
                 "I am a sound engineer on the radio. " +
                 "I write music and create commercials.";
         try {
-            FileOutputStream out = new FileOutputStream("Date1.txt");
-            byte[] array = txt.getBytes(StandardCharsets.UTF_8);
-            out.write(array);
-            out.close();
+
+            FileWriter in = new FileWriter("Date1.txt");
+            BufferedWriter bw = new BufferedWriter(in);
+            bw.write(txt);
+            bw.close();
+
         } catch (Exception e) {
             e.getStackTrace();
         }
         try {
-            InputStream in = new FileInputStream("Date1.txt");
-            byte[] arrOut = in.readAllBytes();
-            in.read(arrOut);
-            String txt2 = new String(arrOut);
+
+            FileReader out = new FileReader("Date1.txt");
+            BufferedReader br = new BufferedReader(out);
+            String txt2 = br.readLine();
+            br.close();
+
             String[] arrTxt2 = txt2.split(" ");
 
             String lineAmountInt = String.valueOf(arrTxt2.length);
@@ -36,14 +38,13 @@ public class FileCreator2 {
 
             String find = arrTxt2[4] + arrTxt2[9] + arrTxt2[10] + arrTxt2[11];
 
-            String outDate = "Number of lines :"+lineAmountInt + " Longest word : " + txtArrLongest + " Birth : " + find;
+            String outDate = "Number of lines :" + lineAmountInt + " Longest word : " + txtArrLongest + " Birth : " + find;
             System.out.println(outDate);
 
-            FileOutputStream out = new FileOutputStream("Date2.txt");
-            byte[] array = outDate.getBytes(StandardCharsets.UTF_8);
-            out.write(array);
-            out.close();
-
+            FileWriter out2 = new FileWriter("Date2.txt");
+            BufferedWriter bw2 = new BufferedWriter(out2);
+            bw2.write(outDate);
+            bw2.close();
 
         } catch (IOException e) {
             e.printStackTrace();

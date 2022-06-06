@@ -1,9 +1,6 @@
 package Practice.p2;
-import java.io.FileInputStream;
-import java.io.FileOutputStream;
-import java.io.IOException;
-import java.io.InputStream;
-import java.nio.charset.StandardCharsets;
+
+import java.io.*;
 import java.util.Arrays;
 import java.util.Comparator;
 import java.util.regex.Matcher;
@@ -23,22 +20,20 @@ public class main {
                 "Nine Inch Nails, \"Rusty Cage\" by Soundgarden, and \"Personal Jesus\" by Depeche Mode.variant";
 
         try {
-            FileOutputStream out = new FileOutputStream("Date.txt");
-            byte[] array = txt.getBytes(StandardCharsets.UTF_8);
-            out.write(array);
-            out.close();
+            FileWriter out = new FileWriter("Date.txt");
+            BufferedWriter br = new BufferedWriter(out);
+            br.write(txt);
+            br.close();
         } catch (Exception e) {
             e.getStackTrace();
 
         }
 
         try {
-            InputStream in = new FileInputStream("Date.txt");
-            System.out.println("Amount line in file "+in.available());
-            byte[] arrayOut = new byte[in.available()];
-            in.read(arrayOut);
-            String txtIn = new String(arrayOut);
-            in.close();
+            FileReader in = new FileReader("Date.txt");
+            BufferedReader br = new BufferedReader(in);
+            String txtIn = br.readLine();
+
             String[] txtArr = txtIn.split(" ");
             //Symbols counter
             for (int i = 0; i < txtArr.length; i++) {
@@ -51,8 +46,8 @@ public class main {
             String txtArrShort = Arrays.stream(txtIn.split(" ")).
                     min(Comparator.comparingInt(String::length)).
                     orElse(null);
-            System.out.println("Longest word "+txtArrLongest);
-            System.out.println("Shortest word "+txtArrShort);
+            System.out.println("Longest word " + txtArrLongest);
+            System.out.println("Shortest word " + txtArrShort);
             //regex search
             Pattern p = Pattern.compile("var");
             Matcher m = p.matcher(txtIn);
