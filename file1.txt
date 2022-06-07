@@ -1,0 +1,4 @@
+I started learning java on my own since December 2021.
+I listened to the course on the Udemy platform, used the Javarush platform.
+In April 2022, I continued to study java at SoftServe IT Academy.
+I am currently finishing my Java Core course. The next Online Marathon course is ahead.
