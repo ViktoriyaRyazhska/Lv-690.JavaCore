@@ -1,0 +1,14 @@
+Java Thread pool represents a group of worker threads that are waiting for the job and reuse many times.
+In case of thread pool, a group of fixed size threads are created. A thread from the thread pool is
+pulled out and assigned a job by the service provider. After completion of the job, thread is
+contained in the thread pool again.
+The language derives much of its Syntax from C and C++ but has a simpler object model and fewer low-level
+facilities. Java applications are typically compiled to bytecode which can run on any Java virtual machine
+(JVM) regardless of computer architecture.
+The original and reference implementation Java compilers, virtual machines, and class libraries were developed
+by Sun from 1995. As of May 2007, in compliance with the specifications of the Java Community Process,
+Sun made available most of their Java technologies as Virtual Machine under the GNU General Public License.
+Others have also developed alternative implementations of these Sun technologies, such as the GNU Compiler
+for Java and var GNU Classpath.
+Java's design, industry backing and portability have made Java one of the fastest-growing and most widely
+used programming languages in the modern computing industry.
