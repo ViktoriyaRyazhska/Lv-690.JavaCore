@@ -1,0 +1,3 @@
+My name is Dmytro
+My birthday is 28/07/2003
+I`m studying at java core
