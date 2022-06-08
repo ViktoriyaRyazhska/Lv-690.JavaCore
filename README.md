@@ -4,7 +4,7 @@ N|Name| HW1 | HW2. Classes|HW3. If...|HW4. Loops|HW5. OOP1 |HW6. OOP2 |HW7. Inne
 1|Artem Lysiak|+|+|+|+|+|+|+|+|+||||
 2|Dmytro Yarych|+|+|+|+|+|+|+|+|+|+|||
 3|Vitalii Tsono|+|+|+|+|+|+|+|+|+|+|||
-4|Ryscal Tanya|+|+|+|+|+|+|+|+|+||||
+4|Ryscal Tanya|+|+|+|+|+|+|+|+|+||+||
 5|S.Nesterenko|+|+|+|+|+|+|+|+|+|+|+||
 6|Andy Dorokhin|+|+|||||||||||
 7|Denis Bratuh|+|+|+|+|+|+|+|+|+||||
