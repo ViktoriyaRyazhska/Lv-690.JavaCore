@@ -6,21 +6,23 @@ import java.io.InputStreamReader;
 
 public class ReadNumber {
 
-    public static int readNumber(int start, int end) throws IOException {
+    public int readNumber(int start, int end) throws Exception {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         System.out.println("Input number: ");
         try {
             int number = Integer.parseInt(br.readLine());
             if (number > start && number < end) {
                 System.out.println(number);
+                return number;
+            } else {
+                throw new Exception();
             }
-            return number;
+
         } catch (NumberFormatException e) {
             System.err.println(e.getMessage());
-        } catch (IOException e) {
-            System.err.println(e.getMessage());
+            throw e;
         }
-        return start;
+
     }
 }
 

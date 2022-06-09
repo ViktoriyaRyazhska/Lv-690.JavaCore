@@ -2,18 +2,24 @@ package lesson11.Task2;
 
 import java.io.IOException;
 import java.util.ArrayList;
-import java.util.Collections;
+
 import java.util.List;
 
-import static lesson11.Task2.ReadNumber.readNumber;
 
 public class Main {
-    public static void main(String[] args) throws IOException {
-
-        for (int i=0;i<10;i++){
-            List<Integer> number = new ArrayList<Integer>();
-            number = Collections.singletonList(readNumber(1, 100));
+    public static void main(String[] args)  {
+        ReadNumber readNumber = new ReadNumber();
+        List<Integer> number = new ArrayList<Integer>();
+        for (int i = 0; i < 10; i++) {
+            try {
+                number.add(readNumber.readNumber(1, 100));
+            } catch (Exception e) {
+                System.err.println(e.getMessage());
+            }
         }
-        System.out.println("hello");
+        System.out.println("____________");
+        for (Integer item : number) {
+            System.out.println(item);
+        }
     }
 }
