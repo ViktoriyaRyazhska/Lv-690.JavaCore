@@ -17,7 +17,7 @@ N|Name| HW1 | HW2. Classes|HW3. If...|HW4. Loops|HW5. OOP1 |HW6. OOP2 |HW7. Inne
 14|Vynnyk Nazar|+|+|||||||||||
 15|OGura|+|+|+|+|||||+|+|||
 16|nrasaci|+||||||||||||
-17|Rostyslav Rak|+|+|+|+|+|+|+|+|+||||
+17|Rostyslav Rak|+|+|+|+|+|+|+|+|+|+|||
 18||||||||||||||
 19||||||||||||||
 20||||||||||||||
