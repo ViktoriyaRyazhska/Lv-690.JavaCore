@@ -11,7 +11,7 @@ N|Name| HW1 | HW2. Classes|HW3. If...|HW4. Loops|HW5. OOP1 |HW6. OOP2 |HW7. Inne
 8|Yevheniy Serdiuk|+|+|+|+|+|+|+|+|+|+|+||
 9|Nickoss1|+|+|+|+|+|+|+|+|+|+|+|+|
 10|Andrii Sukhodolskiy|+|+|+|+|+|+|+|+|+||||
-11|Yuriy Magotskyi|+|+|+|+|+||||||||
+11|Yuriy Magotskyi|+|+|+|+|+|+|+|+|+||||
 12|Nazar Tsybulskyi|+|+|+|+|+|+|+|+|+|+|||
 13|Karpliuk Iurii|+|+|+||||||||||
 14|Vynnyk Nazar|+|+|||||||||||
