@@ -1,6 +1,0 @@
-A thread is a thread of execution in a program. The JavaVirtual Machine allows an application to have 
-multiple threads of execution running concurrently.
- "Every thread has a priority. Threads with higher priority areexecuted in preference to threads with
-lower priority. Each threadmay or may not also be marked as a daemon. When code running insome thread
-creates a new Thread object, the newthread has its priority initially set equal to the priority of thecreating
-thread, and is a daemon thread if and only if thecreating thread is a daemon.
