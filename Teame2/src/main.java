@@ -14,7 +14,7 @@ public class main {
                 task();
                 break;
         }
-        
+
     }
     public static void task(){
         System.out.println("Task on");
