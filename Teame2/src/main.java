@@ -69,7 +69,7 @@ public class main {
         }
         System.out.println(steps);
     }
-    public static void executeTask11() {
+    public static void executeTask12() {
         int sum = 0;
         for (int i = 1; i < 1000; i++) {
             if (i % 3 == 0) {
