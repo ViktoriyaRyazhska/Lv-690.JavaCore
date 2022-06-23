@@ -1,3 +1,0 @@
-Number of lines :4
-Longest word :  I write music and create commercials.
-Birth :  I was born on November 10, 1983.
