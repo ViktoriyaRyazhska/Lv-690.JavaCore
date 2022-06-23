@@ -1,4 +1,4 @@
-package com.softserve.javacore;
+package HW1;
 
 
 public class Task5 {

@@ -1,4 +1,4 @@
-package com.softserve.javacore;
+package HW1;
 
 import java.util.Arrays;
 import java.util.stream.Collectors;
