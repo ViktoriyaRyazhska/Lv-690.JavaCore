@@ -18,7 +18,7 @@ public class Task3 {
         }
     }
 
-    public static void main(String[] args) {
-        Task3.execute();
-    }
+    //public static void main(String[] args) {
+       // Task3.execute();
+   // }
 }
