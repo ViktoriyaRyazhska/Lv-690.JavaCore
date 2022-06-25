@@ -9,7 +9,7 @@ public class main {
     public static void main(String[] args) {
 
         do{
-            System.out.println("Enter number of task (1 2 4 5 6 9 10 12)");
+            System.out.println("Enter number of task (1 2 3 4 5 6 9 10 12)");
             Scanner sc = new Scanner(System.in);
 
             int sw = sc.nextInt();
@@ -23,6 +23,9 @@ public class main {
                     System.out.println("Input number and decompose this number into a product of prime numbers with their degrees ");
                     Task2.decomposeNumber(print());
                     break;
+                case 3:
+                    System.out.println("Input cost of dollar and sum of money in gryvna. Calculate how many dollars user can buy and change.")
+                    Task3.execute();
                 case 4:
                     System.out.println("Input string and calculate number of loud letters (e.g. word: “My test text”, result: 3)");
                     Task4.execute();
