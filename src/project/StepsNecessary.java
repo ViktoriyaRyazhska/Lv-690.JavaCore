@@ -2,9 +2,11 @@ package project;
 
 import java.util.Scanner;
 
+/**
+ * this class contains the main menu of the coffee machine
+ */
 public class StepsNecessary extends Thread {
     CoffeeMachine coffeeMachine = new CoffeeMachine();
-
 
     /**
      * program that offers to buy one cup of coffee, to fill up the ingredients, or to take its money.
@@ -53,6 +55,12 @@ public class StepsNecessary extends Thread {
         }
     }
 
+    /**
+     * the program offers to choose what kind of coffee to brew
+     * in case of wrong, it displays an error again, offers to make a choice of coffee
+     *
+     * @param chose
+     */
     private void buy(int chose) {
         Coffee coffee = null;
         switch (chose) {

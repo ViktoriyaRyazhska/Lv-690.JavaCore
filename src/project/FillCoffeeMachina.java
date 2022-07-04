@@ -2,6 +2,13 @@ package project;
 
 import java.util.Scanner;
 
+/**
+ * This class describes the methods for filling the coffee machine:
+ * The method accepts the user's request to fill the coffee machine with water.
+ * The method accepts the user's request to fill the coffee machine with milk.
+ * The method accepts the user's request to fill the coffee machine with coffee beans.
+ * The method accepts the user's request to fill the coffee machine with disposable cups.
+ */
 public class FillCoffeeMachina extends Fill {
     int water;
     int milk;
@@ -9,7 +16,7 @@ public class FillCoffeeMachina extends Fill {
     int disposableCups;
 
     /**
-     * The method accepts the user's request to fill the coffee machine with ingredients.
+     * The method accepts the user's request to fill the coffee machine with water.
      *
      * @param scanner
      */
@@ -25,6 +32,12 @@ public class FillCoffeeMachina extends Fill {
         water = newWater;
     }
 
+    /**
+     * The method accepts the user's request to fill the coffee machine with milk.
+     *
+     * @param scanner
+     */
+
     public void fillMilk(Scanner scanner) {
         int maxMilk = 800;
         System.out.println("Write how many ml of milk you want to add (max 800ml): ");
@@ -36,6 +49,11 @@ public class FillCoffeeMachina extends Fill {
         milk = newMilk;
     }
 
+    /**
+     * The method accepts the user's request to fill the coffee machine with coffee beans.
+     *
+     * @param scanner
+     */
     public void fillCoffeeBeans(Scanner scanner) {
         int maxCoffeeBeans = 250;
         System.out.println("Write how many grams of coffee beans you want to add (max 250g): ");
@@ -47,6 +65,11 @@ public class FillCoffeeMachina extends Fill {
         coffeeBeans = newCoffeeBeans;
     }
 
+    /**
+     * The method accepts the user's request to fill the coffee machine with disposable cups.
+     *
+     * @param scanner
+     */
     public void fillDisposableCups(Scanner scanner) {
         int maxDisposableCups = 10;
         System.out.println("Write how many disposable cups of coffee you want to add (max 10): ");
@@ -55,7 +78,7 @@ public class FillCoffeeMachina extends Fill {
             System.out.println("Error! Write how many disposable cups of coffee you want to add (max 10): ");
             newDisposableCups = scanner.nextInt();
         }
-        disposableCups=newDisposableCups;
+        disposableCups = newDisposableCups;
     }
 
     @Override
@@ -77,10 +100,4 @@ public class FillCoffeeMachina extends Fill {
     int putDisposableCups() {
         return disposableCups;
     }
-
-    @Override
-    void calculate() {
-
-    }
-
 }

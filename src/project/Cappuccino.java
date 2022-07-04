@@ -4,6 +4,7 @@ import static java.lang.Thread.sleep;
 
 /**
  * And for the cappuccino, the coffee machine needs 200 ml of water, 100 ml of milk, and 12 g of coffee beans. It costs $6.
+ * Class Cappuccino making cappuccino and show progress.
  */
 
 public class Cappuccino extends Coffee {
@@ -67,7 +68,6 @@ public class Cappuccino extends Coffee {
         System.out.println("Coffee is ready!");
         System.out.println();
     }
-
 }
 
 

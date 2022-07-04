@@ -2,6 +2,15 @@ package project;
 
 import java.util.Scanner;
 
+/**
+ * In this class, the initial number of ingredients and their maximum values are set.
+ * This class uses the following methods:
+ * The method shows the amount of products in the coffee machine.
+ * The method that counts the amount of stock after making coffee.
+ * The method considers: is it possible to make coffee from the available ingredients.
+ * The method allows you to calculate how many ingredients can be added to the coffee machine.
+ * The method allows you to see how much money you have and give it out.
+ */
 public class CoffeeMachine {
     private int water = 600;
     private int milk = 600;
@@ -14,7 +23,7 @@ public class CoffeeMachine {
     private final int maxDisposableCups = 10;
 
     /**
-     * the method shows the amount of products in the coffee machine
+     * The method shows the amount of products in the coffee machine.
      */
     public void show() {
 
@@ -27,7 +36,7 @@ public class CoffeeMachine {
     }
 
     /**
-     * the method that counts the amount of stock after making coffee
+     * The method that counts the amount of stock after making coffee.
      *
      * @param coffee
      */
@@ -44,6 +53,12 @@ public class CoffeeMachine {
         }
     }
 
+    /**
+     * The method considers: is it possible to make coffee from the available ingredients.
+     *
+     * @param coffee
+     * @return
+     */
     public boolean ifPossibleMakeСoffee(Coffee coffee) {
 
         if (water - coffee.getWater() < 0) {
@@ -62,28 +77,49 @@ public class CoffeeMachine {
     }
 
     /**
-     * the method shows the amount of stock in the coffee machine after filling
+     * The method allows you to calculate how much water can be added to the coffee machine.
      *
      * @param fill
      */
-
-
     public void calculateWater(Fill fill) {
         calculate(water, maxWater, fill.putWater(), "ml");
     }
 
+    /**
+     * The method allows you to calculate how much milk can be added to the coffee machine.
+     *
+     * @param fill
+     */
     public void calculateMilk(Fill fill) {
         calculate(milk, maxMilk, fill.putMilk(), "ml");
     }
 
+    /**
+     * The method allows you to calculate how much coffee beans can be added to the coffee machine.
+     *
+     * @param fill
+     */
     public void calculateCoffeeBeans(Fill fill) {
         calculate(coffeeBeans, maxCoffeeBeans, fill.putCoffeeBeans(), "g");
     }
 
+    /**
+     * The method allows you to calculate how much disposable cups can be added to the coffee machine.
+     *
+     * @param fill
+     */
     public void calculateDisposableCups(Fill fill) {
         calculate(disposableCups, maxDisposableCups, fill.putDisposableCups(), "");
     }
 
+    /**
+     * The method allows you to calculate how many ingredients can be added to the coffee machine.
+     *
+     * @param currentValue
+     * @param maxValue
+     * @param newValue
+     * @param units
+     */
     public void calculate(int currentValue, int maxValue, int newValue, String units) {
         if ((currentValue + newValue) <= maxValue) {
             System.out.println("Yes, You can fill " + newValue + units);
@@ -95,7 +131,7 @@ public class CoffeeMachine {
     }
 
     /**
-     * the method allows you to see how much money you have and give it out
+     * The method allows you to see how much money you have and give it out.
      */
     public void takeMoney(Scanner scanner) {
         System.out.println("I gave you $" + money);

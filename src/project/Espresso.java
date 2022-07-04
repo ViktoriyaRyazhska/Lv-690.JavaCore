@@ -4,6 +4,7 @@ import static java.lang.Thread.sleep;
 
 /**
  * For the espresso, the coffee machine needs 250 ml of water and 16 g of coffee beans. It costs $4.
+ * Class Espresso making espresso and show progress.
  */
 
 public class Espresso extends Coffee {
@@ -65,7 +66,6 @@ public class Espresso extends Coffee {
         System.out.println("Coffee is ready!");
         System.out.println();
     }
-
-    }
+}
 
 

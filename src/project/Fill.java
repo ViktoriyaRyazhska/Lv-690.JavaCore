@@ -1,6 +1,8 @@
 package project;
 
-
+/**
+ * Abstract class for filling coffee machine.
+ */
 public abstract class Fill {
     abstract int putWater();
 
@@ -9,11 +11,6 @@ public abstract class Fill {
     abstract int putCoffeeBeans();
 
     abstract int putDisposableCups();
-
-
-
-
-    abstract void calculate();
 }
 
 
